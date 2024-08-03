@@ -1,12 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-Up Form</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English:regular,italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:regular,italic,700,700italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar Section -->
+      <div class="sidebar__container">
+        <!-- Title Card -->
+        <div class="title__card__container">
+          <img
+            class="title__card--image"
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="white viking head outline"
+          />
+          <h1 class="title__card--text">Nordic Dev</h1>
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="content__container">
+        <!-- Quote at the top -->
+        <div class="quote">
+          <p class="quote--text">
+            Welcome to Nordic Dev, where Viking spirit meets cutting-edge web
+            development. Unleash your potential and conquer new digital realms
+            with our powerful tools and resources. Join our bold and innovative
+            community today!
+          </p>
+          <p class="quote--text"><em>Code Like a Viking!</em></p>
+        </div>
+
+        <div class="viking__image">
+          <img
+            class="viking__image--image"
+            src="assets/dark-viking.png"
+            alt="dark viking head outline"
+          />
+        </div>
+
+        <!-- Form -->
+        <div class="form__container">
+          <h1 class="form--title">Join the guild!</h1>
+
+          <!-- First Name -->
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name" />
+
+          <!-- Last Name -->
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="last_name" />
+
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+
+          <!-- Phone Number -->
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" />
+
+          <!-- Password -->
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+
+          <!-- Confirm Password -->
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+        </div>
+        <!-- Button -->
+        <div class="button__container">
+          <button class="button" type="button">Create Account</button>
+          <p class="account__text">
+            Already have an account? <a href="">Log in</a>
+          </p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer__container">
+        <p class="copyright">
+          &copy; 2024 <a href="https://github.com/carisaelam">Carisa Elam</a>
+        </p>
+
+        <!-- Acknowledgement -->
+        <p class="acknowledgement">
+          Photo by
+          <a
+            href="https://unsplash.com/@r3dmax?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Jonatan Pie</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/fire-coming-from-mountain-during-daytime-g6tqHx0ME1o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>
