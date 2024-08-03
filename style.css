@@ -53,7 +53,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  height: clamp(10rem, 30vw + 1rem, 20rem);
+  height: clamp(15rem, 30vw + 1rem, 20rem);
   position: relative;
 }
 

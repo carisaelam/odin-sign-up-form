@@ -68,7 +68,14 @@
 
           <!-- Phone Number -->
           <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" id="phone" />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}"
+            title="Enter a valid phone number"
+            required
+          />
 
           <!-- Password -->
           <label for="password">Password</label>
