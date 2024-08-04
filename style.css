@@ -155,10 +155,10 @@ h1 {
   flex-direction: column;
 }
 
-.form__container h1 {
+.form--title {
   text-align: center;
   font-size: clamp(1rem, 1rem + 2vw, 4rem);
-  margin-bottom: clamp(1.5rem, 1.5rem + 3vw, 4rem);
+  margin-bottom: clamp(1.25rem, 1.25rem + 3vw, 3rem);
 }
 
 .form__container input {
