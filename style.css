@@ -61,7 +61,7 @@ h1 {
   height: clamp(15rem, 30vw + 1rem, 20rem);
   position: sticky;
   top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .title__card__container {
