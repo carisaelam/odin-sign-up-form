@@ -45,6 +45,11 @@ h1 {
 
 /* Sidebar Section */
 
+.main__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar__container {
   background: url(assets/volcano.png);
   background-size: cover;
@@ -192,7 +197,7 @@ input::placeholder {
 .button:active {
   background-color: hsl(14, 77%, 25%);
   color: rgb(122, 122, 122);
-  transform: scale(.99);
+  transform: scale(0.99);
 }
 
 .account__text {
@@ -227,4 +232,62 @@ input::placeholder {
 
 .footer__container a:hover {
   color: #dd4a1d;
+}
+
+@media only screen and (min-width: 767px) {
+  .main__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar__container {
+    height: 100vh;
+    width: 40%;
+    position: sticky;
+    top: 0; 
+  }
+
+  .title__card__container {
+    padding: clamp(1rem, 1rem + 1vw, 2rem) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title__card--text,
+  .title__card--image {
+    font-size: clamp(3rem, 2rem + 2vw, 5rem);
+  }
+
+  .content__container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote {
+    font-size: clamp(1rem, 1rem + .5vw, 1.5rem);
+  }
+
+  .viking__image {
+    display: none;
+  }
+
+  .form__container {
+    width: 100%;
+  }
+
+  .form__container h1 {
+    font-size: clamp(1.25rem, 1.25rem + .5vw, 1.75rem);
+    margin-bottom: clamp(1.25rem, 1.25rem + .5vw, 1.75rem);
+  }
+
+  .form__container input {
+    font-size: clamp(1rem, 1rem + .5vw, 1.5rem);
+  }
+
+  .form__container label {
+    font-size: clamp(.8rem, .8rem + .5vw, 1rem);
+  }
 }
