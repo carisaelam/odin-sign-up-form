@@ -52,49 +52,60 @@
           </div>
 
           <!-- Form -->
+          <h1 class="form--title">Join the guild!</h1>
           <div class="form__container">
-            <h1 class="form--title">Join the guild!</h1>
-
             <!-- First Name -->
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" id="first_name" />
+            <div class="form__item">
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" />
+            </div>
 
             <!-- Last Name -->
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" />
+            <div class="form__item">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" />
+            </div>
 
             <!-- Email -->
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <div class="form__item">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
 
             <!-- Phone Number -->
-            <label for="phone">Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="000-000-0000"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              title="Please use this format: 000-000-0000"
-            />
+            <div class="form__item">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="000-000-0000"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="Please use this format: 000-000-0000"
+              />
+            </div>
 
             <!-- Password -->
-            <label for="password">Password</label>
-            <input
-              type="password"
-              minlength="6"
-              name="password"
-              id="password"
-            />
+            <div class="form__item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                minlength="6"
+                name="password"
+                id="password"
+              />
+            </div>
 
             <!-- Confirm Password -->
-            <label for="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              minlength="6"
-              name="confirm-password"
-              id="confirm-password"
-            />
+            <div class="form__item">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                minlength="6"
+                name="confirm-password"
+                id="confirm-password"
+              />
+            </div>
           </div>
           <!-- Button -->
           <div class="button__container">
@@ -108,10 +119,6 @@
     </main>
     <!-- Footer -->
     <footer class="footer__container">
-      <p class="copyright">
-        &copy; 2024 <a href="https://github.com/carisaelam">Carisa Elam</a>
-      </p>
-
       <!-- Acknowledgement -->
       <p class="acknowledgement">
         Photo by
@@ -124,6 +131,10 @@
           href="https://unsplash.com/photos/fire-coming-from-mountain-during-daytime-g6tqHx0ME1o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
           >Unsplash</a
         >
+      </p>
+
+      <p class="copyright">
+        &copy; 2024 Created by <a href="https://github.com/carisaelam">Carisa Elam</a>
       </p>
     </footer>
   </body>
