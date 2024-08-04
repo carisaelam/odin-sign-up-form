@@ -133,6 +133,11 @@ h1 {
   font-size: clamp(1rem, 1rem + 1vw, 3rem);
 }
 
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__container h1 {
   text-align: center;
   font-size: clamp(1rem, 1rem + 2vw, 4rem);
@@ -280,7 +285,7 @@ input::placeholder {
   }
 
   .form__container {
-    width: clamp(10rem, 100%, 50rem);
+    width: clamp(10rem, 90%, 45rem);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -307,6 +312,7 @@ input::placeholder {
   .form__item {
     display: flex;
     flex-direction: column;
+    width: clamp(10rem, 45%, 30rem)
   }
 
   .button__container {
