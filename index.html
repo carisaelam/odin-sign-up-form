@@ -72,26 +72,29 @@
             type="tel"
             name="phone"
             id="phone"
-            pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}"
-            title="Enter a valid phone number"
-            required
+            placeholder="000-000-0000"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Please use this format: 000-000-0000"
           />
 
           <!-- Password -->
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" minlength="6" name="password" id="password" />
 
           <!-- Confirm Password -->
           <label for="confirm-password">Confirm Password</label>
           <input
             type="password"
+            minlength="6"
             name="confirm-password"
             id="confirm-password"
           />
         </div>
         <!-- Button -->
         <div class="button__container">
-          <button class="button" type="button">Create Account</button>
+          <button class="button" type="button" title="poot">
+            Create Account
+          </button>
           <p class="account__text">
             Already have an account? <a href="">Log in</a>
           </p>

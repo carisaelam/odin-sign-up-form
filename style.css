@@ -82,6 +82,8 @@ h1 {
 .content__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -89,7 +91,10 @@ h1 {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 2rem;
+  max-width: clamp(45ch, 90%, 70ch);
+  font-size: clamp(1rem, 1rem + 1vw, 3rem);
 }
 
 .quote--text {
@@ -110,7 +115,7 @@ h1 {
 }
 
 .viking__image--image {
-  width: clamp(1rem, 10%, 3rem);
+  width: clamp(1.5rem, 1.5rem + 3vw, 4rem);
 }
 
 /* Form */
@@ -119,12 +124,14 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  width: clamp(15rem, 90%, 40rem);
+  font-size: clamp(1rem, 1rem + 1vw, 3rem);
 }
 
 .form__container h1 {
   text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: clamp(1rem, 1rem + 2vw, 4rem);
+  margin-bottom: clamp(1.5rem, 1.5rem + 3vw, 4rem);
 }
 
 .form__container input {
@@ -133,16 +140,22 @@ h1 {
   border: none;
   box-shadow: 0 0 5px rgba(94, 94, 94, 0.386);
   padding: 0 0.5rem;
+  font-size: clamp(1rem, 1rem + 1vw, 2rem);
+  margin-bottom: clamp(1.5rem, 1.5rem + 1vw, 2.5rem);
 }
 
 .form__container label {
   text-transform: uppercase;
   font-family: "Im Fell English", Georgia, "Times New Roman", Times, serif;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.8rem + 1vw, 1.5rem);
 }
 
-.form__container input:invalid {
+input:invalid {
   border: 1px solid rgba(206, 0, 0, 0.783);
+}
+
+input::placeholder {
+  color: rgba(128, 128, 128, 0.435);
 }
 
 /* Button */
@@ -157,19 +170,34 @@ h1 {
 
 .button {
   background-color: #dd4a1d;
-  padding: 0.5rem calc(1rem + 10vw);
+  padding: 0.5rem clamp(1.5rem, 1.5rem + 1vw, 2.5rem);
   font-family: "Im Fell English", Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: clamp(0.8rem, 0.8rem + 1vw, 1.5rem);
   color: whitesmoke;
   border: none;
   border-radius: 0.5rem;
   margin-bottom: 0.25rem;
+  box-shadow: 0 0 8px hsl(14, 77%, 15%);
+}
+
+.button:hover {
+  background-color: hsl(14, 77%, 55%);
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 4px hsl(14, 77%, 15%);
+}
+
+.button:active {
+  background-color: hsl(14, 77%, 25%);
+  color: rgb(122, 122, 122);
+  transform: scale(.99);
 }
 
 .account__text {
-  font-size: 0.8rem;
   margin-bottom: 2rem;
+  font-size: clamp(0.6rem, 0.6rem + 1vw, 1rem);
 }
 
 .account__text a {
@@ -188,25 +216,15 @@ h1 {
   align-items: center;
   flex-direction: column;
   padding: 2rem;
-}
-
-.acknowledgement {
-  font-size: 0.4rem;
-  color: white;
-}
-
-.acknowledgement a {
-  color: white;
-}
-
-.copyright {
+  font-size: clamp(0.4rem, 0.4rem + 1vw, 1rem);
   color: white;
   text-align: center;
-  font-size: 0.5rem;
 }
 
-.copyright a {
+.footer__container a {
+  color: white;
+}
+
+.footer__container a:hover {
   color: #dd4a1d;
-  text-align: center;
-  font-size: 0.5rem;
 }
